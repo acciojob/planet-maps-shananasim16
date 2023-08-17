@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <img src="solarsystem.jpg" alt="Solar System" usemap="#solarsystem-map">
+    
+    <map name="solarsystem-map">
+        <area shape="circle" coords="100,150,20" href="mercury.htm" alt="Mercury">
+        <area shape="circle" coords="180,150,25" href="venus.htm" alt="Venus">
+        <area shape="circle" coords="270,150,30" href="earth.htm" alt="Earth">
+        <!-- Add areas for other planets using the same format -->
+        <area shape="rect" coords="400,100,500,200" href="sun.htm" alt="Sun">
+    </map>
 </body>
-
 </html>
