@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System</title>
+  <style>
+    /* Add any additional CSS styles here if needed */
+  </style>
 </head>
 <body>
-    <img src="solarsystem.jpg" alt="Solar System" usemap="#solarsystem-map">
+  <!-- Use the map tag to define the clickable areas -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Solar_system.jpg" alt="Solar System" usemap="#solarMap">
+
+  <!-- Define the map with the name "solarMap" -->
+  <map name="solarMap">
+    <!-- Define clickable areas for each planet using the area tag -->
+    <area shape="circle" coords="50,50,20" href="mercury.htm" alt="Mercury">
+    <area shape="circle" coords="120,90,25" href="venus.htm" alt="Venus">
+    <area shape="circle" coords="200,120,30" href="earth.htm" alt="Earth">
+    <area shape="circle" coords="280,160,28" href="mars.htm" alt="Mars">
+    <area shape="circle" coords="380,200,40" href="jupiter.htm" alt="Jupiter">
+    <area shape="circle" coords="500,240,35" href="saturn.htm" alt="Saturn">
+    <area shape="circle" coords="650,280,22" href="uranus.htm" alt="Uranus">
+    <area shape="circle" coords="800,320,25" href="neptune.htm" alt="Neptune">
+    <area shape="circle" coords="950,360,15" href="pluto.htm" alt="Pluto">
     
-    <map name="solarsystem-map">
-        <area shape="circle" coords="100,150,20" href="mercury.htm" alt="Mercury">
-        <area shape="circle" coords="180,150,25" href="venus.htm" alt="Venus">
-        <area shape="circle" coords="270,150,30" href="earth.htm" alt="Earth">
-        <!-- Add areas for other planets using the same format -->
-        <area shape="rect" coords="400,100,500,200" href="sun.htm" alt="Sun">
-    </map>
+    <!-- Define a rectangular area for the sun -->
+    <area shape="rect" coords="450,180,550,280" href="sun.htm" alt="Sun">
+  </map>
 </body>
 </html>
